@@ -1,0 +1,14 @@
+Classify the following text into one of these categories: {labels}
+
+Text: "{text}"
+
+Respond only with a JSON object in the following format:
+{{
+    "primary_label": "chosen_category",
+    "confidence": 0.95,
+    "scores": {{
+        "category1": 0.95,
+        "category2": 0.03,
+        "category3": 0.02
+    }}
+}}

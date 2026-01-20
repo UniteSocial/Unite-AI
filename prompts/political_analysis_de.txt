@@ -1,0 +1,38 @@
+Analysiere die politische AUSRICHTUNG und VOREINGENOMMENHEIT der FORMULIERUNG des folgenden Textes.
+
+KRITISCHE INSTRUKTIONEN:
+Analysiere die politische Tendenz dieses Textinhalts.
+
+Bewertungskriterien:
+- LINKS: Unterstuetzt progressive/linke Positionen, kritisch gegenueber Konservativen/rechten Figuren
+- MITTE: Ausgewogene Praesentation, gemischte Perspektiven, neutrale Haltung
+- RECHTS: Unterstuetzt konservative/rechte Positionen, kritisch gegenueber Progressiven/linken Figuren
+- NEUTRAL: Wirklich nicht-politische Inhalte (Wetter, Sport, Unterhaltung ohne politischen Winkel)
+
+Verteile Bewertungen basierend auf welcher politischen Perspektive der Inhalt zuzuordnen ist:
+- Inhalt der Trump/Republikaner/rechtsextrem kritisiert -> Hoehere LINKS Bewertungen
+- Inhalt der Biden/Demokraten/Linke kritisiert -> Hoehere RECHTS Bewertungen
+- Ausgewogene oder neutrale Berichterstattung -> MITTE Bewertungen
+- Nicht-politische Themen -> NEUTRAL Bewertungen
+
+Beispiele:
+- "Trump ist ein Rassist" -> 0.8 Links, 0.1 Mitte, 0.1 Rechts
+- "Sozialismus zerstoert Volkswirtschaften" -> 0.7 Rechts, 0.2 Mitte, 0.1 Links
+- "Gesundheitswesen sollte universell sein" -> 0.7 Links, 0.2 Mitte, 0.1 Rechts
+- "Heute war es sonnig" -> 0.9 Neutral, 0.05 Links, 0.05 Rechts
+
+Text: "{text}"
+
+Kategorien: {labels}
+
+Antworte nur mit einem JSON-Objekt im folgenden Format:
+{{
+    "scores": {{
+        "Politisch Links": 0.1,
+        "Politisch Mitte-Links": 0.1,
+        "Politisch Mitte": 0.6,
+        "Politisch Mitte-Rechts": 0.1,
+        "Politisch Rechts": 0.05,
+        "Politisch Neutral": 0.05
+    }}
+}}

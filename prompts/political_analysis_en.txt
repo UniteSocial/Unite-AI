@@ -1,0 +1,38 @@
+Analyze the political BIAS and FRAMING in the WORDING of the following text.
+
+CRITICAL INSTRUCTIONS:
+Analyze the political tendency of this text content.
+
+Evaluation criteria:
+- LEFT: Supports progressive/left positions, critical of conservatives/right-wing figures
+- CENTER: Balanced presentation, mixed perspectives, neutral stance
+- RIGHT: Supports conservative/right positions, critical of progressives/left-wing figures
+- NEUTRAL: Truly non-political content (weather, sports, entertainment without political angle)
+
+Distribute scores based on which political perspective the content aligns with:
+- Content criticizing Trump/Republicans/right-wing -> Higher LEFT scores
+- Content criticizing Biden/Democrats/left-wing -> Higher RIGHT scores
+- Balanced or neutral reporting -> CENTER scores
+- Non-political topics -> NEUTRAL scores
+
+Examples:
+- "Trump is a racist" -> 0.8 Left, 0.1 Center, 0.1 Right
+- "Socialism destroys economies" -> 0.7 Right, 0.2 Center, 0.1 Left
+- "Healthcare should be universal" -> 0.7 Left, 0.2 Center, 0.1 Right
+- "Today was sunny" -> 0.9 Neutral, 0.05 Left, 0.05 Right
+
+Text: "{text}"
+
+Categories: {labels}
+
+Respond only with a JSON object in the following format:
+{{
+    "scores": {{
+        "Left": 0.1,
+        "Center-Left": 0.1,
+        "Center": 0.6,
+        "Center-Right": 0.1,
+        "Right": 0.05,
+        "Neutral": 0.05
+    }}
+}}

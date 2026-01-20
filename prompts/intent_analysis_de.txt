@@ -1,0 +1,12 @@
+Analysiere die Absichten im folgenden Text: {labels}
+
+Text: "{text}"
+
+Antworte nur mit einem JSON-Objekt im folgenden Format:
+{{
+    "scores": {{
+        "kategorie1": 0.95,
+        "kategorie2": 0.03,
+        "kategorie3": 0.02
+    }}
+}}

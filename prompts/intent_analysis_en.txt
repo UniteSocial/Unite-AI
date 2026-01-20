@@ -1,0 +1,12 @@
+Analyze the intents in the following text: {labels}
+
+Text: "{text}"
+
+Respond only with a JSON object in the following format:
+{{
+    "scores": {{
+        "category1": 0.95,
+        "category2": 0.03,
+        "category3": 0.02
+    }}
+}}
