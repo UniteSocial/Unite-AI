@@ -2,7 +2,7 @@
 
 **Empowering healthier online discourse through transparent AI analysis**
 
-Unite-I is an open-source content analysis service designed to help platforms and users better understand social media content. Built with transparency and trust in mind, it provides multi-dimensional analysis of text to combat misinformation and promote informed online conversations.
+Unite-I is an open-source content analysis service.
 
 ## What it does
 
@@ -127,7 +127,7 @@ docker run -p 8000:8000 --env-file .env unite-i
 
 ## Contributing
 
-We welcome contributions! Whether it's adding new languages, improving detection accuracy, or enhancing documentation — every contribution helps make online spaces safer and more transparent.
+We welcome contributions! Whether it's adding new languages, improving detection accuracy, or enhancing documentation. Every contribution helps make online spaces safer and more transparent.
 
 ## License
 
