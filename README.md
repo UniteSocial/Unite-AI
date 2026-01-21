@@ -116,7 +116,7 @@ unite-i/
 
 ## Transparency
 
-All system prompts that influence AI decisions are published in the `prompts/` directory. See our blog post: [Why We're Open-Sourcing Our Fact-Checking AI](https://unitesocial.eu/blog/why-we-are-open-sourcing-our-fact-checking-ai)
+All system prompts that influence AI decisions are published in the `prompts/` directory. See our blog post: [Why We're Open-Sourcing Our Fact-Checking AI](https://unitesocial.eu/blog/unite-ai-open-source)
 
 ## Docker
 
